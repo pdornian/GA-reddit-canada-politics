@@ -1,4 +1,10 @@
-#  Project 3: Classifying Canadian Discussion Subreddits
+Another GA Data Science Intensive project. I trained a Naive Bayes classifier to distinguish between reddit comments from r/Canada and r/OnGuardForThee.
+
+Todo: Make an interface and put it online so that users can submit text to be classified.
+
+The remainder of the readme below is left unchanged from the projects submission.
+
+# Classifying Canadian Discussion Subreddits
 
 ## Executive Summary
 
