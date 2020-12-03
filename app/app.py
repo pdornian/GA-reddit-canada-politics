@@ -24,7 +24,6 @@ def snowball_tokens2(text):
     text_processed = re.sub(r'[^A-Za-z]', ' ', text).split()
     tokens = [snow.stem(word) for word in text_processed]
     return tokens
-final_model = pickle.load(open('./models/final_model.p','rb'))
 
 canada_df = pd.read_csv('..\\data\\canada_subreddit_comments.csv')
 
