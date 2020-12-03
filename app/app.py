@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 import pickle
 import re
+import sklearn 
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
