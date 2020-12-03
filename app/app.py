@@ -15,7 +15,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score, accuracy_score
 from sklearn.naive_bayes import BernoulliNB
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__)
 
 #I'm just training the damn model here due to dependency issues in loading a pickled pipeline.
 
