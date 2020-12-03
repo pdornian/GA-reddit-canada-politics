@@ -74,7 +74,3 @@ def classify():
 	comment = request.form.get('comment')
 	pred_text=pred_post(comment, bnb_final)
 	return render_template('index.html', classification=pred_text)
-
-# Call app.run(debug=True) when python script is called
-if __name__=='__main__':
-	app.run(debug=True)
