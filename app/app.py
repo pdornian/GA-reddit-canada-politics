@@ -48,6 +48,8 @@ bnb_final= Pipeline([('cv', CountVectorizer(tokenizer=snowball_tokens2,
 
 
 bnb_final.fit(X_train, y_train);
+#initialize box as empty
+last_search=""
 
 #=========================FUNCTIONS================================================
 def pred_post(text, model):
@@ -72,4 +74,4 @@ def index():
 def classify():
 	comment = request.form.get('comment')
 	pred_text=pred_post(comment, bnb_final)
-	return render_template('index.html', classification=pred_text)
+	return render_template('index.html', classification=pred_text, last_search=comment)

@@ -31,7 +31,7 @@ body {
 <h1> Input a sample comment to classify</h1>	
 <form action="{{ url_for('classify')}}" method="post">
   <label for="fname"><strong>Sample Comment:</strong></label></br>
-  <textarea name="comment" rows="4" cols="100"> </textarea> </br>
+  <textarea name="comment" rows="4" cols="100">{{last_search}}</textarea> </br>
   <button type="submit" value="Submit">Classify</button>
 </form> 
 
