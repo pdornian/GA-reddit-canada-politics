@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Subredddit Classification</title>
+
+<style>
+.flex-container {
+	display: flex;
+	align-items: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+form {
+	margin:10px;
+}
+
+body {
+	margin-left:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1> Input a sample comment to classify</h1>	
+<form action="{{ url_for('classify')}}" method="post">
+  <label for="fname"><strong>Sample Comment:</strong></label></br>
+  <textarea name="comment" rows="4" cols="100"> </textarea> </br>
+  <button type="submit" value="Submit">Classify</button>
+</form> 
+
+
+<p>{{classification}}</p>
+
+
+</body>
+</html>
