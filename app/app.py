@@ -25,7 +25,7 @@ def snowball_tokens2(text):
     tokens = [snow.stem(word) for word in text_processed]
     return tokens
 
-canada_df = pd.read_csv('..\data\canada_subreddit_comments.csv')
+canada_df = pd.read_csv('../data/canada_subreddit_comments.csv')
 
 custom_stopwords= stopwords.words('english')
 custom_stopwords.extend(['people', 'like', 'canada'])
