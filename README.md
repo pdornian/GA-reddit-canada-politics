@@ -1,6 +1,8 @@
 Another GA Data Science Intensive project. I trained a Naive Bayes classifier to distinguish between reddit comments from r/Canada and r/OnGuardForThee.
 
-Todo: Make an interface and put it online so that users can submit text to be classified.
+Here's a lightweight app that let's you enter your own text and see what the model classifies it as.
+
+https://politics-subreddit-classifier.herokuapp.com/
 
 The remainder of the readme below is left unchanged from the projects submission.
 
